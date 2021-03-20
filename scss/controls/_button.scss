@@ -1,0 +1,24 @@
+.button {
+  display: inline-block;
+  border-radius: 56px;
+  border-width: 0;
+  height: 56px;
+  padding: 0 40px;
+  cursor: pointer;
+
+  color: white;
+  font-weight: 700;
+  background-color: var(--clr-primary-400);
+
+  &:hover {
+    background-color: var(--clr-primary-600);
+  }
+
+  &--disabled {
+    background-color: var(--clr-neutral-200);
+  }
+
+  &--disabled:hover {
+    background-color: var(--clr-neutral-200);
+  }
+}

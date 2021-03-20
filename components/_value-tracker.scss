@@ -1,0 +1,15 @@
+@use '../scss/abstracts/mixins' as *;
+
+.value-tracker {
+  @include media("large") {
+    text-align: left;
+  }
+
+  &__value {
+    font-size: 2rem;
+  }
+
+  &__text {
+    margin-top: 10px;
+  }
+}

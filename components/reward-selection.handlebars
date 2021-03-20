@@ -1,0 +1,51 @@
+<div class="reward-selection__inner">
+  <div class="reward-selection__info">
+    <div class="reward-selection__top">
+      <input id="reward-selection{{id}}" class="radio reward-selection__radio" type="radio" name="pledge" value="{{id}}"
+        {{#unless count}} disabled {{/unless}} />
+      <div class="reward-selection__header">
+        <label class="reward-selection__title" for="reward-selection{{id}}">
+          {{title}}
+        </label>
+        {{#if showCount}}
+        <p class="reward-selection__pledge">
+          Pledge ${{pledge}} or more
+        </p>
+        {{/if}}
+      </div>
+    </div>
+    <p class="reward-selection__desc">
+      {{desc}}
+    </p>
+    <div class="reward-selection__counter">
+      {{#if showCount}}
+      <h1 class="reward-selection__count">
+        {{count}}
+      </h1>
+      <span class="reward-selection__count-text">
+        left
+      </span>
+      {{/if}}
+    </div>
+  </div>
+
+  <div class="reward-selection__divider js-reward-selection__divider{{id}}"></div>
+
+  <div class="reward-selection__controls js-reward-selection__controls{{id}}">
+    <p class="reward-selection__enter">
+      Enter your pledge
+    </p>
+    <div class="pledge-input reward-selection__pledge-input">
+      <span class="pledge-input__symbol">
+        $
+      </span>
+      <input class="pledge-input__input js-pledge-input__input{{id}}" type="number" value="{{pledge}}" min="{{pledge}}"
+        {{#unless count}} disabled {{/unless}} />
+    </div>
+    <button
+      class="button {{#unless count}} button--disabled {{/unless}} reward-selection__button js-reward-selection__button{{id}}"
+      value="{{id}}"">
+      Continue
+    </button>
+  </div>
+</div>

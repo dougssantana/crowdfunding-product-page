@@ -1,0 +1,14 @@
+{
+  "name": "crowdfunding-product-page",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "handlebars": "^4.7.7",
+    "sass": "^1.32.8"
+  },
+  "scripts": {
+    "dev": "sass scss:./ components:./ --watch",
+    "build": "sass scss:./ components:./ & handlebars components/ -f templates.precompiled.js"
+  }
+}

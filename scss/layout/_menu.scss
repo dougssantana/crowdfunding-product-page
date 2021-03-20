@@ -1,0 +1,17 @@
+.menu {
+  display: flex;
+  list-style: none;
+
+  &__item {
+    margin-left: 2rem;
+  }
+
+  &__item:first-child {
+    margin-left: 0;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: white;
+  }
+}

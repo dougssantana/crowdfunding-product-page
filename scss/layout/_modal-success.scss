@@ -1,0 +1,13 @@
+.modal-success {
+  display: none;
+  text-align: center;
+  max-width: 500px;
+
+  &__icon {
+    margin-bottom: 20px;
+  }
+
+  &__desc {
+    margin: 20px 0;
+  }
+}

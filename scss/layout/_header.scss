@@ -1,0 +1,32 @@
+@use '../abstracts/mixins' as *;
+
+.header {
+  height: 300px;
+  background-image: url("images/image-hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @include media("large") {
+    height: 400px;
+    background-image: url("images/image-hero-desktop.jpg");
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    padding: 30px 20px;
+
+    @include media("large") {
+      padding: 50px 165px;
+    }
+  }
+
+  &__nav {
+    display: none;
+
+    @include media("large") {
+      display: block;
+      margin-left: auto;
+    }
+  }
+}

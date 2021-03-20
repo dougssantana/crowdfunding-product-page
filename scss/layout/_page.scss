@@ -1,0 +1,12 @@
+.page {
+  &__main {
+    position: absolute;
+    top: 245px;
+    left: 0;
+    right: 0;
+
+    @media (min-width: 1440px) {
+      top: 310px;
+    }
+  }
+}

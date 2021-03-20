@@ -1,0 +1,23 @@
+@use '../abstracts/mixins' as *;
+
+.section-card {
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+  padding: {
+    left: 20px;
+    right: 20px;
+    bottom: 40px;
+  }
+
+  @include media("large") {
+    padding: {
+      left: 40px;
+      right: 40px;
+    }
+  }
+
+  &--left-text {
+    text-align: left;
+  }
+}

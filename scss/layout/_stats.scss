@@ -1,0 +1,40 @@
+@use '../abstracts/mixins' as *;
+
+.stats {
+  &__inner {
+    padding-top: 40px;
+  }
+
+  &__values {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 60px 1fr 60px 1fr;
+
+    @include media("large") {
+      grid-template-columns: 1fr 0.5fr 1fr 0.5fr 1fr;
+      grid-template-rows: auto;
+      justify-items: start;
+      align-items: center;
+    }
+  }
+
+  &__divider {
+    justify-self: center;
+    align-self: center;
+
+    width: 80px;
+    height: 0;
+    border-top: 1px solid var(--clr-neutral-300);
+
+    @include media("large") {
+      width: 0;
+      height: 100%;
+      border-top: none;
+      border-left: 1px solid var(--clr-neutral-300);
+    }
+  }
+
+  &__progress {
+    margin-top: 40px;
+  }
+}

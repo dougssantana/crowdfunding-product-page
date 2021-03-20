@@ -1,0 +1,27 @@
+@use '../abstracts/mixins' as *;
+
+.main {
+  &__intro {
+    margin: 0 24px;
+
+    @include media("large") {
+      margin: 0 350px;
+    }
+  }
+
+  &__stats {
+    margin: 24px 24px;
+
+    @include media("large") {
+      margin: 24px 350px;
+    }
+  }
+
+  &__about {
+    margin: 24px 25px;
+
+    @include media("large") {
+      margin: 24px 350px;
+    }
+  }
+}

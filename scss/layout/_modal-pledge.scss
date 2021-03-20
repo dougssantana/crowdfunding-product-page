@@ -1,0 +1,20 @@
+.modal-pledge {
+  display: none;
+  position: relative;
+  max-width: 600px;
+
+  &__close {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  &__desc {
+    margin: 20px 0;
+  }
+
+  &__reward-selection {
+    margin-bottom: 20px;
+  }
+}

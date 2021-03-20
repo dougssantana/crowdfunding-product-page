@@ -1,0 +1,32 @@
+.radio {
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+  -webkit-appearance: none;
+
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid var(--clr-neutral-400);
+
+  &:disabled {
+    border-color: var(--clr-neutral-200);
+  }
+
+  &::before {
+    display: none;
+    content: "";
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background-color: var(--clr-primary-400);
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:checked::before {
+    display: block;
+  }
+}

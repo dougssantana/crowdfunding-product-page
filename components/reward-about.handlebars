@@ -1,0 +1,32 @@
+<div class="reward-about__inner">
+  <div class="reward-about__header">
+    <h2 class="reward-about__title">
+      {{title}}
+    </h2>
+    <p class="reward-about__pledge">
+      Pledge ${{pledge}} or more
+    </p>
+  </div>
+  <p class="reward-about__desc">
+    {{desc}}
+  </p>
+  <div class="reward-about__footer">
+    <div class="reward-about__counter">
+      <h1 class="reward-about__count">
+        {{count}}
+      </h1>
+      <span class="reward-about__count-text">
+        left
+      </span>
+    </div>
+    {{#if count}}
+    <button class="reward-about__select button" onclick="openPledgeModal({{id}})">
+      Select Reward
+    </button>
+    {{else}}
+    <button class="reward-about__select button button--disabled">
+      Out of Stock
+    </button>
+    {{/if}}
+  </div>
+</div>
